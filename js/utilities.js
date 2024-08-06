@@ -12,7 +12,32 @@ function addBgColorById(elementId){
     const element = document.getElementById(elementId);
     element.classList.add('bg-orange-400');
 }
+function removeBgColorById(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.remove('bg-orange-400');
+}
 
+function getElementValueById(elementId){
+    const element = document.getElementById(elementId);
+    const elementString = element.innerText;
+    const elementValue = parseFloat(elementString);
+    return elementValue;
+
+}
+
+function getElementTextValueById(elementId){
+    const element = document.getElementById(elementId);
+    const text = element.innerText;
+    
+    return text;
+
+}
+
+
+function setElementValueById(elementId , value){
+    const element = document.getElementById(elementId);
+    element.innerText = value;
+}
 // function getARandomAlphabet(){
 //     const alphabetString = 'abcdefghijklmnopqrstuvwxyz';
 //     const alphabets = alphabetString.split('');
